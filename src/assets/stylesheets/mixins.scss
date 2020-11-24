@@ -1,0 +1,16 @@
+@mixin media-layout($break-medium, $break-large, $break-great, $break-max) {
+  margin: 0 auto;
+  max-width: 540px;
+  @media only screen and (min-width: $break-medium) {
+    max-width: 720px;
+  }
+  @media only screen and (min-width: $break-large) {
+    max-width: 960px;
+  }
+  @media only screen and (min-width: $break-great) {
+    max-width: 1140px;
+  }
+  @media only screen and (min-width: $break-max) {
+    max-width: 1296px;
+  }
+}

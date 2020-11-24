@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cadfab6a-26c2-4518-ad98-f7f6f4b84978" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kSUcKUiMfHx0ztHnsOSiHHdGmo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\NIX\lection1\project" />
+      <recent name="D:\Documents\NIX\lection1\project\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\NIX\lection1\project\dist\assets\img\intro" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cadfab6a-26c2-4518-ad98-f7f6f4b84978" name="Default Changelist" comment="" />
+      <created>1605693565268</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605693565268</updated>
+      <workItem from="1605693566396" duration="4163000" />
+      <workItem from="1605723093559" duration="1659000" />
+      <workItem from="1605781852306" duration="9670000" />
+      <workItem from="1605868395311" duration="21669000" />
+      <workItem from="1605950053194" duration="21708000" />
+      <workItem from="1606038140392" duration="37318000" />
+      <workItem from="1606109261185" duration="30725000" />
+      <workItem from="1606208110327" duration="1622000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="585" y="197" key="#Inspections" timestamp="1605982204344">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="197" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1605982204344" />
+    <state x="460" y="164" key="SettingsEditor" timestamp="1605790541780">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="460" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605790541780" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1605954522208">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605954522208" />
+  </component>
+</project>
