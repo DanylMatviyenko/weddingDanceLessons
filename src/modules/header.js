@@ -9,8 +9,8 @@ const menuAnimation = function() {
             items[i].classList.remove('hamburger__item_animation_none');
         }
     }
-    dropDownMenu.classList.toggle('navigation__drop-down-menu_expand');
     hamburger.classList.toggle('hamburger_animation_close-menu');
+    dropDownMenu.classList.toggle('navigation__drop-down-menu_expand');
 }
 
 hamburger.addEventListener('click', menuAnimation);

@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <!--<link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />-->
   <title>Wedding Dance</title>
 </head>
 <body class="body">
 <nav class="navigation">
     <div class="navigation__container">
-      <h2 class="logo navigation__logo"><a href="#" class="logo__link">Wedding Dance</a></h2>
+      <h2 class="logo navigation__logo">
+        <a href="#" class="logo__link logo__link_color_dark">Wedding Dance</a>
+      </h2>
       <div class="navigation__drop-down-menu">
         <h2 class="navigation__menu-header h1-text">Menu</h2>
         <ul class="links-list navigation__list">
@@ -19,8 +25,8 @@
           <li class="links-list__list-item"><a href="#" class="links-list__link">Lesson Review</a></li>
         </ul>
         <button class="buy-button navigation__buy-button buy-button_theme_light buy-button_desktop">
-          <span class="navigation__btn-text-mobile">Let's start</span>
-          <span class="navigation__btn-text-desktop">Start</span>
+          <span class="buy-button__btn-text-mobile">Let's start</span>
+          <span class="buy-button__btn-text-desktop">Start</span>
         </button>
       </div>
       <div class="hamburger navigation__hamburger">
@@ -33,7 +39,8 @@
 </nav>
 <header class="header">
   <div class="header__container">
-    <div class="header__promo-img-container">
+    <div class="header__promo-img-container wow animate__animated animate__fadeInRight"
+         data-wow-duration=".6s" data-wow-delay="1.4s" data-wow-offset="100">
       <picture>
         <source media="(min-width: 768px)" srcset="assets/img/header/newlyweds-836.jpg">
         <source srcset="assets/img/header/newlyweds-540.jpg">
@@ -41,14 +48,20 @@
       </picture>
     </div>
     <div class="intro-content header__intro-content">
-      <h1 class="h1-text">Wedding<br/>Dance<br/>Lessons</h1>
-      <h5 class="intro-content__location h5-text">New Jersey</h5>
-      <p class="intro-content__plain-text plain-text">
+      <h1 class="h1-text wow animate__animated animate__fadeInDown"
+          data-wow-duration="1s" data-wow-delay=".4s" data-wow-offset="100">Wedding<br/>Dance<br/>Lessons</h1>
+      <h5 class="intro-content__location h5-text wow animate__animated animate__fadeInUp"
+          data-wow-duration=".4s" data-wow-delay="1s" data-wow-offset="100">New Jersey</h5>
+      <p class="intro-content__plain-text plain-text wow animate__animated animate__fadeInUp"
+         data-wow-duration=".6s" data-wow-delay="1.4s" data-wow-offset="100">
         The wedding dance is one of the most important dances in your life.
         You look perfect and the whole audience is looking at you.
         Also, it becomes the favorite moment you like to play on videos and photos. Feel the moment
       </p>
-      <button class="intro-content__buy-button buy-button buy-button_theme_light">Let's start</button>
+      <button class="intro-content__buy-button
+                     buy-button buy-button_theme_light
+                     wow animate__animated
+                     animate__fadeInUp" data-wow-duration=".6s" data-wow-delay="1.4s" data-wow-offset="100">Let's start</button>
     </div>
   </div>
 </header>
@@ -56,44 +69,45 @@
   <div class="services__container">
     <div class="section-intro">
       <h3 class="section-intro__header h3-text">Our Services</h3>
-      <p class="plain-text section-intro__plain-text">We want to make your wedding day perfect that is why suggest a lot of options for dance:
+      <p class="plain-text section-intro__plain-text">We want to make your wedding
+        day perfect that is why suggest a lot of options for dance:
         not only for a bride and groom but for their friends and relatives</p>
     </div>
     <div class="services__row">
-      <div class="service-item services__service-item">
-        <div class="service-item__image-container">
-          <img src="assets/img/services/dance.jpg" alt="Couple dancing" class="service-item__service-image">
+      <div class="section-item-default services__section-item-default">
+        <div class="section-item-default__image-container">
+          <img src="assets/img/services/dance.jpg" alt="Couple dancing" class="section-item-default__service-image">
         </div>
-        <div class="service-item__content">
+        <div class="section-item-default__content">
           <h4 class="h4-text">For Bride and Groom</h4>
-          <ul class="service-item__list plain-text">
-            <li class="service-item__list-item">First  Dance</li>
-            <li class="service-item__list-item">Parent & Child Dance</li>
+          <ul class="section-item-default__list plain-text">
+            <li class="section-item-default__list-item">First  Dance</li>
+            <li class="section-item-default__list-item">Parent & Child Dance</li>
           </ul>
         </div>
       </div>
-      <div class="service-item services__service-item">
-        <div class="service-item__image-container">
-          <img src="assets/img/services/woman-guests.jpg" alt="woman guests" class="service-item__service-image">
+      <div class="section-item-default services__section-item-default">
+        <div class="section-item-default__image-container">
+          <img src="assets/img/services/woman-guests.jpg" alt="woman guests" class="section-item-default__service-image">
         </div>
-        <div class="service-item__content">
+        <div class="section-item-default__content">
           <h4 class="h4-text">For Guests</h4>
-          <ul class="service-item__list plain-text">
-            <li class="service-item__list-item">Groomsmen Dance</li>
-            <li class="service-item__list-item">Parent Dance</li>
-            <li class="service-item__list-item">Children’s Dance</li>
+          <ul class="section-item-default__list plain-text">
+            <li class="section-item-default__list-item">Groomsmen Dance</li>
+            <li class="section-item-default__list-item">Parent Dance</li>
+            <li class="section-item-default__list-item">Children’s Dance</li>
           </ul>
         </div>
       </div>
-      <div class="service-item services__service-item">
-        <div class="service-item__image-container">
-          <img src="assets/img/services/couple.jpg" alt="" class="service-item__service-image">
+      <div class="section-item-default services__section-item-default">
+        <div class="section-item-default__image-container">
+          <img src="assets/img/services/couple.jpg" alt="" class="section-item-default__service-image">
         </div>
-        <div class="service-item__content">
-          <h4 class="h4-text">For Bride and Groom</h4>
-          <ul class="service-item__list plain-text">
-            <li class="service-item__list-item">First  Dance</li>
-            <li class="service-item__list-item">Parent & Child Dance</li>
+        <div class="section-item-default__content">
+          <h4 class="h4-text">Other events</h4>
+          <ul class="section-item-default__list plain-text">
+            <li class="section-item-default__list-item">Bridal Party Dance</li>
+            <li class="section-item-default__list-item">Anniversary Dance</li>
           </ul>
         </div>
       </div>
@@ -169,5 +183,379 @@
     </div>
   </div>
 </section>
+<section class="coaches">
+  <div class="coaches__container">
+    <div class="section-intro">
+      <h3 class="section-intro__header h3-text">Our Coaches</h3>
+      <p class="plain-text section-intro__plain-text">Coaches in our school
+        are not only perfect dancers but also have a big experience in coaching that is why you will feel really
+        amazing after each of your class</p>
+    </div>
+    <div class="content-slider">
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+
+              <div class="section-item-default coaches__section-item-default section-item-default_desktop">
+                <div class="section-item-default__image-container section-item-default__image-container_desktop">
+                  <img src="assets/img/coaches/ann-walker.jpg" alt="" class="section-item-default__service-image
+                  section-item-default__service-image_desktop section-item-default__service-image_desktop-ann">
+                </div>
+                <div class="section-item-default__content section-item-default__content_desktop">
+                  <h4 class="h4-text"><span class="h4-text__order">01</span>Ann Walker</h4>
+                  <p class="plain-text section-item-default__subheader">Dancer</p>
+                  <ul class="section-item-default__list plain-text">
+                    <li class="section-item-default__list-item">
+                      <div class="section-item-default__coach-info">
+                        <p class="section-item-default__coach-characteristic plain-text">Work experience</p>
+                        <p class="plain-text">8 years</p>
+                      </div>
+                    </li>
+                    <li class="section-item-default__list-item">
+                      <div class="section-item-default__coach-info">
+                        <p class="section-item-default__coach-characteristic plain-text">Teacher for</p>
+                        <p class="plain-text">3 years</p>
+                      </div>
+                    </li>
+                    <li class="section-item-default__list-item">
+                      <div class="section-item-default__coach-info">
+                        <p class="section-item-default__coach-characteristic plain-text">Style</p>
+                        <p class="plain-text">Viennese Waltz, Salsa</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <button class="section-item-default__buy-button
+                                 buy-button
+                                 buy-button_theme_light
+                                 buy-button_mobile
+                                 buy-button_size-mobile_s">
+                    <span class="buy-button__btn-text-mobile">
+                      <i class="icon-arrow icon-arrow__right"></i>
+                    </span>
+                    <span class="buy-button__btn-text-desktop">Start</span>
+                  </button>
+                </div>
+              </div>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="section-item-default coaches__section-item-default section-item-default_desktop">
+              <div class="section-item-default__image-container section-item-default__image-container_desktop">
+                <img src="assets/img/coaches/tom-wilspon.jpg" alt="" class="section-item-default__service-image
+                section-item-default__service-image_desktop section-item-default__service-image_desktop-tom">
+              </div>
+              <div class="section-item-default__content section-item-default__content_desktop">
+                <h4 class="h4-text"><span class="h4-text__order">02</span>Tom Wilspon</h4>
+                <p class="plain-text section-item-default__subheader">Dancer</p>
+                <ul class="section-item-default__list plain-text">
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Work experience</p>
+                      <p class="plain-text">10 years</p>
+                    </div>
+                  </li>
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Teacher for</p>
+                      <p class="plain-text">5 years</p>
+                    </div>
+                  </li>
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Style</p>
+                      <p class="plain-text">HipHop</p>
+                    </div>
+                  </li>
+                </ul>
+                <button class="section-item-default__buy-button
+                                 buy-button
+                                 buy-button_theme_light
+                                 buy-button_mobile
+                                 buy-button_size-mobile_s">
+                    <span class="buy-button__btn-text-mobile">
+                      <span class="buy-button__btn-text-mobile">
+                        <i class="icon-arrow icon-arrow__right"></i>
+                      </span>
+                    </span>
+                  <span class="buy-button__btn-text-desktop">Start</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="section-item-default coaches__section-item-default section-item-default_desktop">
+              <div class="section-item-default__image-container section-item-default__image-container_desktop">
+                <img src="assets/img/coaches/ann-walker.jpg" alt="" class="section-item-default__service-image
+                section-item-default__service-image_desktop-ann section-item-default__service-image_desktop">
+              </div>
+              <div class="section-item-default__content section-item-default__content_desktop">
+                <h4 class="h4-text"><span class="h4-text__order">03</span>Ann Walker</h4>
+                <p class="plain-text section-item-default__subheader">Dancer</p>
+                <ul class="section-item-default__list plain-text">
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Work experience</p>
+                      <p class="plain-text">8 years</p>
+                    </div>
+                  </li>
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Teacher for</p>
+                      <p class="plain-text">3 years</p>
+                    </div>
+                  </li>
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Style</p>
+                      <p class="plain-text">Viennese Waltz, Salsa</p>
+                    </div>
+                  </li>
+                </ul>
+                <button class="section-item-default__buy-button
+                                 buy-button
+                                 buy-button_theme_light
+                                 buy-button_mobile
+                                 buy-button_size-mobile_s">
+                    <span class="buy-button__btn-text-mobile">
+                        <i class="icon-arrow icon-arrow__right"></i>
+                    </span>
+                  <span class="buy-button__btn-text-desktop">Start</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="section-item-default coaches__section-item-default section-item-default_desktop">
+              <div class="section-item-default__image-container section-item-default__image-container_desktop">
+                <img src="assets/img/coaches/tom-wilspon.jpg" alt="" class="section-item-default__service-image
+                  section-item-default__service-image_desktop section-item-default__service-image_desktop-tom">
+              </div>
+              <div class="section-item-default__content section-item-default__content_desktop">
+                <h4 class="h4-text"><span class="h4-text__order">04</span>Tom Wilspon</h4>
+                <p class="plain-text section-item-default__subheader">Dancer</p>
+                <ul class="section-item-default__list plain-text">
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Work experience</p>
+                      <p class="plain-text">10 years</p>
+                    </div>
+                  </li>
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Teacher for</p>
+                      <p class="plain-text">5 years</p>
+                    </div>
+                  </li>
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Style</p>
+                      <p class="plain-text">HipHop</p>
+                    </div>
+                  </li>
+                </ul>
+                <button class="section-item-default__buy-button
+                                 buy-button
+                                 buy-button_theme_light
+                                 buy-button_mobile
+                                 buy-button_size-mobile_s">
+                    <span class="buy-button__btn-text-mobile">
+                        <i class="icon-arrow icon-arrow__right"></i>
+                    </span>
+                  <span class="buy-button__btn-text-desktop">Start</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+
+              <div class="section-item-default coaches__section-item-default section-item-default_desktop">
+                <div class="section-item-default__image-container section-item-default__image-container_desktop">
+                  <img src="assets/img/coaches/ann-walker.jpg" alt="" class="section-item-default__service-image
+                    section-item-default__service-image_desktop section-item-default__service-image_desktop-ann">
+                </div>
+                <div class="section-item-default__content section-item-default__content_desktop">
+                  <h4 class="h4-text"><span class="h4-text__order">05</span>Ann Walker</h4>
+                  <p class="plain-text section-item-default__subheader">Dancer</p>
+                  <ul class="section-item-default__list plain-text">
+                    <li class="section-item-default__list-item">
+                      <div class="section-item-default__coach-info">
+                        <p class="section-item-default__coach-characteristic plain-text">Work experience</p>
+                        <p class="plain-text">8 years</p>
+                      </div>
+                    </li>
+                    <li class="section-item-default__list-item">
+                      <div class="section-item-default__coach-info">
+                        <p class="section-item-default__coach-characteristic plain-text">Teacher for</p>
+                        <p class="plain-text">3 years</p>
+                      </div>
+                    </li>
+                    <li class="section-item-default__list-item">
+                      <div class="section-item-default__coach-info">
+                        <p class="section-item-default__coach-characteristic plain-text">Style</p>
+                        <p class="plain-text">Viennese Waltz, Salsa</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <button class="section-item-default__buy-button
+                                 buy-button
+                                 buy-button_theme_light
+                                 buy-button_mobile
+                                 buy-button_size-mobile_s">
+                    <span class="buy-button__btn-text-mobile">
+                        <i class="icon-arrow icon-arrow__right"></i>
+                    </span>
+                    <span class="buy-button__btn-text-desktop">Start</span>
+                  </button>
+                </div>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="section-item-default coaches__section-item-default section-item-default_desktop">
+              <div class="section-item-default__image-container section-item-default__image-container_desktop">
+                <img src="assets/img/coaches/tom-wilspon.jpg" alt="" class="section-item-default__service-image
+                   section-item-default__service-image_desktop section-item-default__service-image_desktop-tom">
+              </div>
+              <div class="section-item-default__content section-item-default__content_desktop">
+                <h4 class="h4-text"><span class="h4-text__order">06</span>Tom Wilspon</h4>
+                <p class="plain-text section-item-default__subheader">Dancer</p>
+                <ul class="section-item-default__list plain-text">
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Work experience</p>
+                      <p class="plain-text">10 years</p>
+                    </div>
+                  </li>
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Teacher for</p>
+                      <p class="plain-text">5 years</p>
+                    </div>
+                  </li>
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Style</p>
+                      <p class="plain-text">HipHop</p>
+                    </div>
+                  </li>
+                </ul>
+                <button class="section-item-default__buy-button
+                                 buy-button
+                                 buy-button_theme_light
+                                 buy-button_mobile
+                                 buy-button_size-mobile_s">
+                    <span class="buy-button__btn-text-mobile">
+                        <i class="icon-arrow icon-arrow__right"></i>
+                    </span>
+                  <span class="buy-button__btn-text-desktop">Start</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="section-item-default coaches__section-item-default section-item-default_desktop">
+              <div class="section-item-default__image-container section-item-default__image-container_desktop">
+                <img src="assets/img/coaches/ann-walker.jpg" alt="" class="section-item-default__service-image
+                    section-item-default__service-image_desktop section-item-default__service-image_desktop-ann">
+              </div>
+              <div class="section-item-default__content section-item-default__content_desktop">
+                <h4 class="h4-text"><span class="h4-text__order">07</span>Ann Walker</h4>
+                <p class="plain-text section-item-default__subheader">Dancer</p>
+                <ul class="section-item-default__list plain-text">
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Work experience</p>
+                      <p class="plain-text">8 years</p>
+                    </div>
+                  </li>
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Teacher for</p>
+                      <p class="plain-text">3 years</p>
+                    </div>
+                  </li>
+                  <li class="section-item-default__list-item">
+                    <div class="section-item-default__coach-info">
+                      <p class="section-item-default__coach-characteristic plain-text">Style</p>
+                      <p class="plain-text">Viennese Waltz, Salsa</p>
+                    </div>
+                  </li>
+                </ul>
+                <button class="section-item-default__buy-button
+                                 buy-button
+                                 buy-button_theme_light
+                                 buy-button_mobile
+                                 buy-button_size-mobile_s">
+                    <span class="buy-button__btn-text-mobile">
+                        <i class="icon-arrow icon-arrow__right"></i>
+                    </span>
+                  <span class="buy-button__btn-text-desktop">Start</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="section-item-default coaches__section-item-default section-item-default_desktop">
+            <div class="section-item-default__image-container section-item-default__image-container_desktop">
+              <img src="assets/img/coaches/tom-wilspon.jpg" alt="" class="section-item-default__service-image
+                    section-item-default__service-image_desktop section-item-default__service-image_desktop-tom">
+            </div>
+            <div class="section-item-default__content section-item-default__content_desktop">
+              <h4 class="h4-text"><span class="h4-text__order">08</span>Tom Wilspon</h4>
+              <p class="plain-text section-item-default__subheader">Dancer</p>
+              <ul class="section-item-default__list plain-text">
+                <li class="section-item-default__list-item">
+                  <div class="section-item-default__coach-info">
+                    <p class="section-item-default__coach-characteristic plain-text">Work experience</p>
+                    <p class="plain-text">10 years</p>
+                  </div>
+                </li>
+                <li class="section-item-default__list-item">
+                  <div class="section-item-default__coach-info">
+                    <p class="section-item-default__coach-characteristic plain-text">Teacher for</p>
+                    <p class="plain-text">5 years</p>
+                  </div>
+                </li>
+                <li class="section-item-default__list-item">
+                  <div class="section-item-default__coach-info">
+                    <p class="section-item-default__coach-characteristic plain-text">Style</p>
+                    <p class="plain-text">HipHop</p>
+                  </div>
+                </li>
+              </ul>
+              <button class="section-item-default__buy-button
+                                 buy-button
+                                 buy-button_theme_light
+                                 buy-button_mobile
+                                 buy-button_size-mobile_s">
+                    <span class="buy-button__btn-text-mobile">
+                        <i class="icon-arrow icon-arrow__right"></i>
+                    </span>
+                <span class="buy-button__btn-text-desktop">Start</span>
+              </button>
+            </div>
+          </div></div>
+
+        </div>
+      </div>
+      <div class="swiper-control">
+        <div class="arrow arrow_mobile arrow_left"></div>
+        <div class="swiper-pagination content-slider__swiper-pagination plain-text"></div>
+        <div class="arrow arrow_mobile arrow_right"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <footer class="footer__container">
+    <h2 class="logo">
+      <a href="#" class="logo__link logo__link_color_white">Wedding Dance</a>
+    </h2>
+    <p class="copyright plain-text footer__plain-text">Copyright © 2019 </p>
+  </footer>
+</footer>
 </body>
 </html>

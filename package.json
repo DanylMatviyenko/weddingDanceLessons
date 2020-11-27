@@ -43,6 +43,9 @@
     "> 1%"
   ],
   "dependencies": {
-    "url-polyfill": "^1.1.12"
+    "animate.css": "^4.1.1",
+    "swiper": "^6.3.5",
+    "url-polyfill": "^1.1.12",
+    "wow.js": "^1.2.2"
   }
 }

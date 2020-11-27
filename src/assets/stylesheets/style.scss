@@ -3,12 +3,12 @@
 @import "mixins";
 @import "variables";
 @import "nullstyle";
-/*@media only screen and (min-width: $break-) {
-
-}*/
-/*Responsive for laptops, lighthouse, criticalcss, maybe add more pictures to header, quality of images header*/
+/*lighthouse*/
 .body {
   background-color: $bg-color-doc;
+  &_initial-hidden {
+    display: none;
+  }
 }
 .h1-text {
   font-weight: $font-weight-bold;
@@ -32,6 +32,11 @@
   font-family: $font-family-headers;
   font-size: $font-size-headers-4;
   color: $headers-color;
+  &__order {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 12px;
+  }
 }
 .h5-text {
   font-weight: $font-weight-medium;
@@ -61,17 +66,6 @@
       margin: 0 0 0 35px;
     }
   }
-  &__btn-text-desktop {
-    display: none;
-    @media only screen and (min-width: $break-large) {
-      display: inline;
-    }
-  }
-  &__btn-text-mobile {
-    @media only screen and (min-width: $break-large) {
-      display: none;
-    }
-  }
   &__menu-header {
     margin-top: 40px;
     @media only screen and (min-width: $break-large) {
@@ -88,7 +82,7 @@
     background-color: $bg-color-sections;
     z-index: 1;
     position: absolute;
-    transition: height .7s ease-out;
+    transition: height .3s ease-out;
     @media only screen and (min-width: $break-large) {
       display: flex;
       justify-content: center;
@@ -135,7 +129,7 @@
   &__list {
     margin-top: 45px;
     @media only screen and (min-width: $break-large) {
-      margin: 0 -24px;
+      margin: 0 -12px;
     }
   }
   &__hamburger {
@@ -144,7 +138,6 @@
   &__container {
     @include media-layout($break-medium, $break-large, $break-great, $break-max);
     flex-wrap: wrap;
-    //overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -159,7 +152,12 @@
   font-size: $header-logo-size;
   font-weight: $font-weight-bold;
   &__link {
-    color: #000;
+    &_color_dark {
+      color: #000;
+    }
+    &_color_white {
+      color: #fff;
+    }
   }
 }
 
@@ -169,25 +167,25 @@
   }
   &__list-item {
     margin-top: 40px;
-    @media only screen and (min-width: $break-large) {
-      margin: 0 24px;
+    &:first-child {
+      margin-top: 0;
     }
-  }
-  &__list-item:first-child {
-    margin-top: 0;
+    @media only screen and (min-width: $break-large) {
+      margin: 0 12px;
+    }
   }
   &__link {
     @extend .h3-text;
     color: $headers-color;
     border-bottom: 2px solid transparent;
+    &:hover {
+      border-color: $headers-color;
+    }
     @media only screen and (min-width: $break-large) {
         font-family: $font-family-links;
         font-size: 14px;
         font-weight: $font-weight-reg;
     }
-  }
-  &__link:hover {
-    border-color: $headers-color;
   }
   &__buy-button {
     margin-top: 43px;
@@ -211,13 +209,13 @@
     margin-top: 4px;
     &_pos_top {
       margin: 0;
-      animation: top-item-rotate-close .7s ease-in-out forwards;
+      animation: top-item-rotate-close .3s ease-in-out forwards;
     }
     &_pos_center {
-      animation: center-item-show .7s ease-in-out forwards;
+      animation: center-item-show .3s ease-in-out forwards;
     }
     &_pos_bot {
-      animation: bot-item-rotate-close .7s ease-in-out forwards;
+      animation: bot-item-rotate-close .3s ease-in-out forwards;
     }
     &_animation_none {
       animation: none !important;
@@ -225,13 +223,13 @@
   }
   &_animation_close-menu {
     .hamburger__item_pos_top {
-      animation: top-item-rotate-open .7s ease-in-out .7s forwards;
+      animation: top-item-rotate-open .3s ease-in-out .3s forwards;
     }
     .hamburger__item_pos_center {
-      animation: center-item-hide .7s ease-in-out .7s forwards;
+      animation: center-item-hide .3s ease-in-out .3s forwards;
     }
     .hamburger__item_pos_bot {
-      animation: bot-item-rotate-open .7s ease-in-out .7s forwards;
+      animation: bot-item-rotate-open .3s ease-in-out .3s forwards;
     }
   }
 }
@@ -324,6 +322,39 @@
       border-color: $color-btn-dark;
     }
   }
+  &__icon {
+    height: 15px;
+    width: 7.5px;
+  }
+  &__btn-text-desktop {
+    display: none;
+    @media only screen and (min-width: $break-large) {
+      display: inline;
+    }
+  }
+  &__btn-text-mobile {
+    @media only screen and (min-width: $break-large) {
+      display: none;
+    }
+  }
+  &_size-mobile_s {
+    border-radius: 50%;
+    padding: 4.5px 9.5px 4.5px 7.5px;
+    @media only screen and (min-width: $break-large) {
+      border-radius: 3px;
+      padding: 11px 40px;
+    }
+  }
+}
+.icon-arrow {
+  border: solid #FF699F;
+  border-width: 0 3px 3px 0;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 4px;
+  &__right {
+    transform: rotate(-45deg);
+  }
 }
 .header {
   background-color: $bg-color-sections;
@@ -345,11 +376,6 @@
       padding-top: 0;
       width: 67%;
       order: 2;
-      //height: inherit;
-    }
-    @media only screen and (min-width: $break-medium) {
-      //padding-top: 63%;
-      //height: inherit;
     }
   }
   &__promo-img {
@@ -369,7 +395,6 @@
     @media only screen and (min-width: $break-medium) {
       width: 43%;
       order: 1;
-      //width: calc(100% - 875px);
     }
   }
 }
@@ -408,8 +433,6 @@
   padding: calc(2 * #{$padding-sections-btw}) 0 $padding-sections-btw 0;
   &__container {
     @include media-layout($break-medium, $break-large, $break-great, $break-max);
-    //display: flex;
-    //flex-direction: column;
     padding: 0 16px;
   }
   &__row {
@@ -421,18 +444,15 @@
       max-width: none;
       flex-direction: row;
       margin: 0 -8px;
-      //justify-content: space-between;
     }
   }
-  &__service-item {
+  &__section-item-default {
     margin: 8px 0;
     @media only screen and (min-width: $break-large) {
       margin: 0 8px;
+      width: 33.3333%;
     }
   }
-  /*&__service-item:first-child {
-    margin-top: 0;
-  }*/
 }
 .section-intro {
   padding: 0 32px 32px 0;
@@ -446,18 +466,22 @@
     margin-top: 12px;
   }
 }
-.service-item {
+.section-item-default {
   border: 1px solid rgba(0, 0, 0, .04);
   border-radius: 2px;
-  box-shadow: 0 4px 30px 0 rgba(207, 207, 207, .25);
-  @media only screen and (min-width: $break-large) {
-    width: 33.3333%;
-  }
+  box-shadow: 0 4px 30px 0 rgba(207, 207, 207, .5);
+
   &__image-container {
     //mixin ?
     overflow: hidden;
     padding-top: 100%;
     position: relative;
+    &_desktop {
+      @media only screen and (min-width: $break-large) {
+        width: 46%;
+        padding-top: 1%;
+      }
+    }
   }
   &__service-image {
     //mixin ?
@@ -468,18 +492,74 @@
     pointer-events: none;
     width: 100%;
     position: absolute;
+    &_desktop {
+      @media only screen and (min-width: $break-large) {
+        width: auto;
+        height: 100%;
+      }
+    }
+    &_desktop-ann {
+      @media only screen and (min-width: $break-large) {
+        left: -56px;
+      }
+    }
+    &_desktop-tom {
+      @media only screen and (min-width: $break-large) {
+        left: -104px;
+      }
+    }
   }
   &__content {
-    padding: 24px 0 74px 16px;
+    position: relative;
+    padding: 24px 21px 30px 16px;
+    &_desktop {
+      @media only screen and (min-width: $break-large) {
+        width: 54%;
+        padding-right: 0;
+      }
+    }
   }
   &__list {
-    margin-top: 24px;
+    margin-top: 15px;
+    @media only screen and (min-width: $break-large) {
+      margin-top: 23px;
+    }
   }
   &__list-item {
-    margin-top: 10px;
+    margin-top: 7px;
   }
   &__list-item:first-child {
     margin: 0;
+  }
+  &__subheader {
+    margin-top: 3px;
+  }
+  &__coach-characteristic {
+    opacity: 0.5;
+    @media only screen and (min-width: $break-large) {
+      margin-right: 8px;
+    }
+  }
+  &__coach-info {
+    @media only screen and (min-width: $break-large) {
+      display: flex;
+    }
+  }
+  &__buy-button {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    @media only screen and (min-width: $break-large) {
+      position: static;
+      margin: 88px 0 20px 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  &_desktop {
+    @media only screen and (min-width: $break-large) {
+      display: flex;
+    }
   }
 }
 .offer {
@@ -504,7 +584,6 @@
   &__row {
     display: flex;
     flex-direction: row;
-    //justify-content: space-around;
     justify-content: space-around;
     margin: 12.5px 0;
     @media only screen and (min-width: $break-medium) {
@@ -514,15 +593,11 @@
       margin: 25px 0;
     }
   }
-  /*&__row:first-child {
-    margin-top: 0;
-  }*/
 }
 .offer-item {
   width: 156px;
   display: flex;
   flex-direction: column;
-  //justify-content: center;
   align-items: center;
   @media only screen and (min-width: $break-large) {
     width: 166px;
@@ -543,8 +618,115 @@
     width: 100%;
     text-align: center;
     margin-top: 12px;
+    color: #000;
   }
 }
-/*@media only screen and (min-width: $break-) {
+.coaches {
+  background-color: $bg-color-sections;
+  padding: $padding-sections-btw 0 $padding-sections-btw 0;
+  &__container {
+    @include media-layout($break-medium, $break-large, $break-great, $break-max);
+    padding: 0 16px;
+  }
+  &__section-item-default {
+    max-width: 360px;
+    @media only screen and (min-width: $break-large) {
+      max-width: none;
+    }
+  }
+}
+.content-slider {
+  & .content-slider__swiper-pagination {
+    position: static;
+    z-index: 0;
+    margin: 0 -4px;
+  }
+  & .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px 0 4px;
+    background-color: $light-theme-color;
+  }
+}
+.swiper-button {
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+}
+.swiper-control {
+  margin: 16px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (min-width: $break-large) {
+    margin-top: 24px;
+    width: 160px;
+  }
+}
+.arrow {
+  background: #000;
+  height: 2px;
+  width: 37px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  border-radius: 2px;
+  &_mobile {
+    display: none;
+    @media only screen and (min-width: $break-large) {
+      display: block;
+    }
+  }
+  &:before,
+  &:after {
+    content: "";
+    background: #000;
+    position: absolute;
+    height: 2px;
+    width: 15px;
+    border-radius: 2px;
+  }
+  &_left {
+    &:before {
+      right: 15px;
+      bottom: -5px;
+      transform: rotate(45deg);
+    }
 
-}*/
+    &:after {
+      right: 15px;
+      top: -5px;
+      transform: rotate(-45deg);
+    }
+  }
+  &_right {
+    &:before {
+      right: -3px;
+      bottom: -5px;
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      right: -3px;
+      top: -5px;
+      transform: rotate(45deg);
+    }
+  }
+}
+.footer {
+  background-color: $color-bg-footer;
+  padding: $padding-sections-btw 0 $padding-sections-btw 0;
+  &__container {
+    @include media-layout($break-medium, $break-large, $break-great, $break-max);
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__plain-text {
+    color: #fff;
+  }
+}
+.drop-animation {
+  animation: none !important;
+}
