@@ -3,22 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cadfab6a-26c2-4518-ad98-f7f6f4b84978" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/couple.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/dance.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/newlyweds-540.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/newlyweds-836.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/woman-guests.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/stylesheets/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/stylesheets/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/stylesheets/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/stylesheets/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +68,7 @@
       <workItem from="1606208110327" duration="1622000" />
       <workItem from="1606210236474" duration="31880000" />
       <workItem from="1606394371257" duration="23724000" />
-      <workItem from="1606458605886" duration="14273000" />
+      <workItem from="1606458605886" duration="14895000" />
     </task>
     <servers />
   </component>
